@@ -1,6 +1,8 @@
 import asyncio
 from datetime import datetime
 
+from pyrogram.enums import ChatType
+
 import config
 from AloneXMusic import app
 from AloneXMusic.core.call import Alone, autoend
@@ -9,7 +11,7 @@ from AloneXMusic.utils.database import get_client, is_active_chat, is_autoend
 
 async def auto_leave():
     if config.AUTO_LEAVING_ASSISTANT:
-        while not await asyncio.sleep(10000):
+        while not await asyncio.sleep(900):
             from AloneXMusic.core.userbot import assistants
 
             for num in assistants:
@@ -25,7 +27,7 @@ async def auto_leave():
                             if (
                                 i.chat.id != config.LOGGER_ID
                                 and i.chat.id != -1001829172962
-                                and i.chat.id != -1001819089478
+                                and i.chat.id != --1001819089478
                             ):
                                 if left == 20:
                                     continue
