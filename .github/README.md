@@ -7,7 +7,7 @@
 
 <p align="center">
     <b>ᴠɪsɪᴛᴏʀs</b><br>
- -->    <img align="middle" src="https://profile-counter.glitch.me/TeamAloneOp/count.svg" />
+ -->    <img align="middle" src="https://graph.org/file/3e0bfe669982dc270e55c.jpg" />
 </p>
 
 
