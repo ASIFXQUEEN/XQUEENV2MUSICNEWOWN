@@ -11,7 +11,7 @@ async def pinterest(_, message):
      try:
        query= message.text.split(None,1)[1]
      except:
-         return await message.reply("**ɢɪᴠᴇ ɪᴍᴀɢᴇ ɴᴀᴍᴇ ғᴏʀ sᴇᴀʀᴄʜ 🔍**")
+         return await message.reply("**ʀᴜᴋ ᴍᴇʀɪ ᴊᴀɴᴀ👀**")
 
      images = get(f"https://pinterest-api-one.vercel.app/?q={query}").json()
 
