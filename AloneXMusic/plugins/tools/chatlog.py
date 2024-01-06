@@ -7,10 +7,10 @@ from config import LOGGER_ID as LOG_GROUP_ID
 from AloneXMusic import app  
 
 photo = [
-    "https://telegra.ph/file/1949480f01355b4e87d26.jpg",
-    "https://telegra.ph/file/3ef2cc0ad2bc548bafb30.jpg",
+    "https://graph.org/file/2ce1561ccac8b80b65691.jpg",
+    "https://graph.org/file/4a6162a36589d3d12c226.jpg",
     "https://telegra.ph/file/a7d663cd2de689b811729.jpg",
-    "https://telegra.ph/file/6f19dc23847f5b005e922.jpg",
+    "https://graph.org/file/3e0bfe669982dc270e55c.jpg",
     "https://telegra.ph/file/2973150dd62fd27a3a6ba.jpg",
 ]
 
@@ -31,7 +31,7 @@ async def join_watcher(_, message):
                 f"🔐 ᴄʜᴀᴛ ᴜsᴇʀɴᴀᴍᴇ: @{message.chat.username}\n"
                 f"🛰 ᴄʜᴀᴛ ʟɪɴᴋ: [ᴄʟɪᴄᴋ]({link})\n"
                 f"📈 ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀs: {count}\n"
-                f"🤔 ᴀᴅᴅᴇᴅ ʙʏ: {message.from_user.mention}"
+                f"🤔 ɪꜱɴᴇ ᴀᴅᴅ ᴋɪʏᴀ: {message.from_user.mention}"
             )
             await app.send_photo(LOG_GROUP_ID, photo=random.choice(photo), caption=msg, reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton(f"sᴇᴇ ɢʀᴏᴜᴘ👀", url=f"{link}")]
@@ -68,5 +68,5 @@ async def _greet(_, message):
                 f"👥𝐂ᴏᴍᴘʟᴇᴛᴇᴅ {count} 𝐌ᴇᴍʙᴇʀ𝐬🎉"
             )
             await app.send_photo(message.chat.id, photo=random.choice(photo), caption=msg, reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton(f"🥺𝐊ɪᴅɴᴀᴘ 𝐌ᴇ🥺", url=f"https://t.me/{app.username}?startgroup=true")]
+            [InlineKeyboardButton(f"🥺ʟᴇᴋᴇ ᴊᴀᴏ ᴍᴜᴊʜᴇ🥺", url=f"https://t.me/{app.username}?startgroup=true")]
          ]))
