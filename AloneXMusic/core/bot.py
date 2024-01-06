@@ -33,7 +33,7 @@ class Alone(Client):
             )
         except (errors.ChannelInvalid, errors.PeerIdInvalid):
             LOGGER(__name__).error(
-                "Bot has failed to access the log group/channel. Make sure that you have added your bot to your log group/channel."
+                "Bot has failed to access the log group/channel. abe dekho bot ko channel or group chodo group mai kon karta channel mai admim do ja."
             )
             exit()
         except Exception as ex:
@@ -45,10 +45,10 @@ class Alone(Client):
         a = await self.get_chat_member(config.LOGGER_ID, self.id)
         if a.status != ChatMemberStatus.ADMINISTRATOR:
             LOGGER(__name__).error(
-                "Please promote your bot as an admin in your log group/channel."
+                "abee ramdi pehele log bot toh add kar admin bana log group/channel."
             )
             exit()
-        LOGGER(__name__).info(f"Alone Music Bot Started as {self.name}")
+        LOGGER(__name__).info(f"Asif Music Bot Started as {self.name}")
 
     async def stop(self):
         await super().stop()
