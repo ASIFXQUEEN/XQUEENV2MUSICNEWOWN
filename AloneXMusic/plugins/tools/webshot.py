@@ -83,7 +83,7 @@ async def take_ss(_, message: Message):
     try:
         photo = await take_screenshot(url, full)
         if not photo:
-            return await m.edit("𝐅ᴀɪʟᴇᴅ 𝐓ᴏ 𝐓ᴀᴋᴇ 𝐒ᴄʀᴇᴇɴsʜᴏᴛ.")
+            return await m.edit("𝐍𝐚𝐡𝐢 𝐇𝐮𝐚.")
 
         m = await m.edit("𝐔ᴘʟᴏᴀᴅɪɴɢ...")
 
