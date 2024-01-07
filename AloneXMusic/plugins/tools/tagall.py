@@ -1,4 +1,4 @@
-from AloneXMusic import app 
+from AloneX import app 
 import asyncio
 import random
 from pyrogram import Client, filters
