@@ -8,10 +8,10 @@ from pyrogram.types import InputMediaPhoto
 def ul(_, message):
     reply = message.reply_to_message
     if reply.media:
-        i = message.reply("𝐌𝙰𝙺𝙴 𝐀 𝐋𝙸𝙽𝙺...")
+        i = message.reply("ʟʟɪɴᴋ ʙᴀɴᴀᴅᴏ ᴍᴇʀɪ ᴊᴀɴᴀ ᴋᴀ...")
         path = reply.download()
         fk = upload_file(path)
         for x in fk:
             url = "https://telegra.ph" + x
 
-        i.edit(f' 𝐘ᴏᴜʀ 𝐓ᴇʟᴇɢʀᴀᴘʜ {url}')
+        i.edit(f' 𝐓𝐞𝐫𝐚 𝐋𝐢𝐧𝐤 𝐁𝐬𝐝𝐤 {url}')
