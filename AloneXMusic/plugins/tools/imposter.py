@@ -25,7 +25,7 @@ async def chk_usr(_, message: Message):
         or lastname_before != message.from_user.last_name
     ):
         msg += f"""
-🔓 ᴘʀᴇᴛᴇɴᴅᴇʀ ᴅᴇᴛᴇᴄᴛᴇᴅ 🔓
+👀 ᴘᴀᴋᴅᴀ ɢᴀʏᴀ  😁
 ➖➖➖➖➖➖➖➖➖➖➖➖
 🍊 ɴᴀᴍᴇ : {message.from_user.mention}
 🍅 ᴜsᴇʀ ɪᴅ : {message.from_user.id}
@@ -86,7 +86,7 @@ async def chk_usr(_, message: Message):
             message.from_user.last_name,
         )
     if msg != "":
-        await message.reply_photo("https://telegra.ph/file/98c8d031b20663facc2d0.jpg", caption=msg)
+        await message.reply_photo("https://telegra.ph/file/6d22a4a19573ac01706d5.jpg", caption=msg)
 
 
 @app.on_message(filters.group & filters.command("imposter") & ~filters.bot & ~filters.via_bot)
