@@ -9,7 +9,7 @@ from uuid import uuid4
 from pyrogram.types import InlineKeyboardButton,InlineKeyboardMarkup
 
 
-@app.on_message(filters.reply & filters.command(["upscale", "hd"]))
+@app.on_message(filters.reply & filters.command(["cutequeen", "hd"]))
 async def upscale_image(client, message):
     try:
         if not message.reply_to_message or not message.reply_to_message.photo:
@@ -35,11 +35,11 @@ async def upscale_image(client, message):
         await client.send_document(
             message.chat.id,
             document="upscaled_image.png",
-            caption="**ʜᴇʀᴇ ɪs ᴛʜᴇ ᴜᴘsᴄᴀʟᴇᴅ ɪᴍᴀɢᴇ!**",
+            caption="**ᴛᴜᴍʜᴀʀᴀ ᴋᴀᴍ ᴛᴏ ʜᴜᴀ ᴀʙ ᴛᴏ Qᴜᴇᴇɴ ᴋᴀ ɴᴜᴍʙᴇʀ ᴅᴏ**",
         )
 
     except Exception as e:
-        print(f"**ғᴀɪʟᴇᴅ ᴛᴏ ᴜᴘsᴄᴀʟᴇ ᴛʜᴇ ɪᴍᴀɢᴇ**: {e}")
+        print(f"**ᴄʜᴀʟᴀᴊᴀ ʙꜱᴅᴋ**: {e}")
         await message.reply_text("**ғᴀɪʟᴇᴅ ᴛᴏ ᴜᴘsᴄᴀʟᴇ ᴛʜᴇ ɪᴍᴀɢᴇ. ᴘʟᴇᴀsᴇ ᴛʀʏ ᴀɢᴀɪɴ ʟᴀᴛᴇʀ**.")
 
 ######### sticker id
