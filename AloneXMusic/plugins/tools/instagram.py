@@ -1,3 +1,11 @@
+import base64
+import Instagram
+import os
+from pyrogram import filters
+from AloneXMusic import app
+from pyrogram import filters
+import pyrogram
+
 exports.cmdName = () => {
   return {
     name: ['instagram'],
