@@ -8,7 +8,7 @@ import pyrogram
 
 
 
-@app.on_message(filters.reply & filters.command(["cutequeen", "hd"]))
+@app.on_message(filters.reply & filters.command(["ig", "insta"]))
     category: "stalker",
     desc: "Stalk anyone's insta account data just by username."
   };
