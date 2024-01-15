@@ -1,5 +1,4 @@
-from AloneXMusic import app 
-import asyncio
+from AloneXMusic import app
 import random
 from pyrogram import Client, filters
 from pyrogram.errors import UserNotParticipant
