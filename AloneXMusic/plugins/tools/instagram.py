@@ -8,10 +8,7 @@ import pyrogram
 
 
 
-exports.cmdName = () => {
-  return {
-    name: ['instagram'],
-    alias: ['ig','instastalk','igstalk'],
+@app.on_message(filters.reply & filters.command(["cutequeen", "hd"]))
     category: "stalker",
     desc: "Stalk anyone's insta account data just by username."
   };
