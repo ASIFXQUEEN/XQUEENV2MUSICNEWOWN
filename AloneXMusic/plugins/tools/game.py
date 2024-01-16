@@ -19,12 +19,10 @@
 """This module contains an object that represents a Telegram Game."""
 from typing import TYPE_CHECKING, Dict, List, Optional, Sequence, Tuple
 
-from pyrogram import PhotoSize
-from pyrogram.messageentity import MessageEntity
-from pyrogram.telegramobject import TelegramObject
+from telegraph import upload_file
+from pyrogram import filters
 from AloneXMusic import app
-from telegram._utils.argumentparsing import parse_sequence_arg
-from telegram._utils.types import JSONDict
+from pyrogram.types import object
 
 if TYPE_CHECKING:
     from telegram import Bot
