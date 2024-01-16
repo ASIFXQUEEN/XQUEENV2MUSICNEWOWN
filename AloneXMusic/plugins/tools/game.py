@@ -19,7 +19,6 @@
 """This module contains an object that represents a Telegram Game."""
 from typing import TYPE_CHECKING, Dict, List, Optional, Sequence, Tuple
 
-from pyrogram.telegram import Animation
 from pyrogram.photosize import PhotoSize
 from pyrogram.messageentity import MessageEntity
 from pyrogram.telegramobject import TelegramObject
