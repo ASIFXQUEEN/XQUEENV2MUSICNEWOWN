@@ -1,4 +1,4 @@
-from DAXXMUSIC import app as app
+from AloneXMusic import app as app
 from config import BOT_USERNAME
 from pyrogram import filters
 from pyrogram.types import (
@@ -20,7 +20,7 @@ async def _whisper(_, inline_query):
                 title="💌 ᴡʜɪsᴘᴇʀ",
                 description=f"@{BOT_USERNAME} [ USERNAME | ID ] [ TEXT ]",
                 input_message_content=InputTextMessageContent(f"💌 ᴜsᴀɢᴇ ➠ \n\n@{BOT_USERNAME} [ USERNAME | ID ] [ TEXT ]"),
-                thumb_url="https://telegra.ph/file/21c69049c4855ac0a035b.jpg",
+                thumb_url="https://telegra.ph/file/daaee7888bda72ed29dba.jpg",
                 reply_markup=switch_btn
             )
         ]
@@ -39,7 +39,7 @@ async def _whisper(_, inline_query):
                     title="💌 ᴡʜɪsᴘᴇʀ",
                     description="๏ ɪɴᴠᴀʟɪᴅ ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ɪᴅ !",
                     input_message_content=InputTextMessageContent("๏ ɪɴᴠᴀʟɪᴅ ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ɪᴅ!"),
-                    thumb_url="https://telegra.ph/file/21c69049c4855ac0a035b.jpg",
+                    thumb_url="https://telegra.ph/file/daaee7888bda72ed29dba.jpg",
                     reply_markup=switch_btn
                 )
             ]
@@ -59,7 +59,7 @@ async def _whisper(_, inline_query):
                     title="💌 ᴏɴᴇ-ᴛɪᴍᴇ ᴡʜɪsᴘᴇʀ",
                     description=f"๏ sᴇɴᴅ ᴀ ᴏɴᴇ-ᴛɪᴍᴇ ᴡʜɪsᴘᴇʀ ᴛᴏ {user.first_name}!",
                     input_message_content=InputTextMessageContent(f"🍄 ʏᴏᴜ ᴀʀᴇ sᴇɴᴅɪɴɢ ᴀ ᴏɴᴇ-ᴛɪᴍᴇ ᴡʜɪsᴘᴇʀ ᴛᴏ {user.first_name} ᴏɴʟʏ ʜᴇ/sʜᴇ ᴄᴀɴ ᴏᴘᴇɴ ɪᴛ.\n\n๏ ᴛʏᴘᴇ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ/sᴇɴᴛᴇɴᴄᴇ."),
-                    thumb_url="https://telegra.ph/file/21c69049c4855ac0a035b.jpg",
+                    thumb_url="https://telegra.ph/file/daaee7888bda72ed29dba.jpg",
                     reply_markup=one_time_whisper_btn
                 )
             ]
@@ -88,7 +88,7 @@ async def whispes_cb(_, query):
         except Unauthorized:
             pass
         
-        return await query.answer("๏ ᴛʜɪs ᴡʜɪsᴘᴇʀ ɪs ɴᴏᴛ ғᴏʀ ʏᴏᴜ 🚧", show_alert=True)
+        return await query.answer("๏ ᴜɴᴋᴀ ʙᴀᴀᴛ ᴛᴜᴊʜᴇ ᴋʏᴜɴ ᴊᴀɴᴀɴᴀ ʜᴀɪ  🚧", show_alert=True)
     
     search_msg = f"{from_user}_{to_user}"
     
@@ -110,9 +110,9 @@ async def in_help():
     answers = [
         InlineQueryResultArticle(
             title="💌 ᴡʜɪsᴘᴇʀ",
-            description=f"@NykaaXbot [USERNAME | ID] [TEXT]",
-            input_message_content=InputTextMessageContent(f"**๏ ᴜsᴀɢᴇ ➠**\n\n@NykaaXbot (ᴛᴀʀɢᴇᴛ ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ɪᴅ) (ʏᴏᴜʀ ᴍᴇssᴀɢᴇ).\n\n**๏ ᴇxᴀᴍᴘʟᴇ ➠**\n@NykaaxBot @username ɪ ᴡᴀɴɴᴀ ғᴜᴄᴋ ʏᴏᴜ"),
-            thumb_url="https://telegra.ph/file/21c69049c4855ac0a035b.jpg",
+            description=f"@ASHIF903 [USERNAME | ID] [TEXT]",
+            input_message_content=InputTextMessageContent(f"**๏ ᴜsᴀɢᴇ ➠**\n\n@ASHIF903 (ᴛᴀʀɢᴇᴛ ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ɪᴅ) (ʏᴏᴜʀ ᴍᴇssᴀɢᴇ).\n\n**๏ ᴇxᴀᴍᴘʟᴇ ➠**\n@ASHIF @username Qᴜᴇᴇɴ ᴏɴʟɪɴᴇ ᴀꜱɪᴄʜɪ ʙᴇʜ"),
+            thumb_url="https://telegra.ph/file/daaee7888bda72ed29dba.jpg",
             reply_markup=switch_btn
         )
     ]
