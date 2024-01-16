@@ -22,7 +22,7 @@ from typing import TYPE_CHECKING, Dict, List, Optional, Sequence, Tuple
 from telegraph import upload_file
 from pyrogram import filters
 from AloneXMusic import app
-from pyrogram.types import object
+from pyrogram.types import photosize
 
 if TYPE_CHECKING:
     from telegram import Bot
