@@ -19,10 +19,11 @@
 """This module contains an object that represents a Telegram Game."""
 from typing import TYPE_CHECKING, Dict, List, Optional, Sequence, Tuple
 
-from telegram._files.animation import Animation
-from telegram._files.photosize import PhotoSize
-from telegram._messageentity import MessageEntity
-from telegram._telegramobject import TelegramObject
+from pyrogram import Animation
+from pyrogram.photosize import PhotoSize
+from pyrogram.messageentity import MessageEntity
+from pyrogram.telegramobject import TelegramObject
+from AloneXMusic import app
 from telegram._utils.argumentparsing import parse_sequence_arg
 from telegram._utils.types import JSONDict
 
