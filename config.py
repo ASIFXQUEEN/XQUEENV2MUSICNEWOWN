@@ -12,7 +12,7 @@ API_HASH = getenv("API_HASH")
 # Get your token from @BotFather on Telegram.
 BOT_TOKEN = getenv("BOT_TOKEN")
 # Add Owner Username without @ 
-OWNER_USERNAME = getenv("OWNER_USERNAME","MR_NAVEEN720")
+OWNER_USERNAME = getenv("OWNER_USERNAME","ASHIF903")
 # Get Your bot username
 BOT_USERNAME = getenv("BOT_USERNAME" , ".")
 # Don't Add style font 
@@ -29,7 +29,7 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 1000))
 LOGGER_ID = int(getenv("LOGGER_ID", None))
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 6132821365))
+OWNER_ID = int(getenv("OWNER_ID", 6632587591))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
